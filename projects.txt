@@ -1,3 +1,5 @@
-Hadoop map reduce:
+Hadoop map reduce: Optimized an algorithm to perform map-reduce on a corpus of words and calculate co-occurrence rates
 
-Sliding Block Puzzle:
+Sliding Block Puzzle: Optimized an algorithm experimenting with different data structures to design a program to solve sliding block puzzles in a minimum amount of time.
+
+Code available upon request
