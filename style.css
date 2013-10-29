@@ -33,28 +33,19 @@ section {
 	background: #19A3FF;
 }
 
-
-.resume-bt {
+.block-3 {
 	background: #FF8C00;
 }
-.running-bt{
-	background: #19A3FF;
-}
-
-.projects-bt {
-	background: #47D147
-}
-.aboutme-bt{
+.block-4 {
 	background: #B870FF
 }
-
 
 a:hover {
 	background-color: #B870FF;
 }
 
 a:link {
-	//color: black;
+	color: black;
 	text-decoration: none;
 }
 
