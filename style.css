@@ -1,58 +1,80 @@
-html {
-	font-family: BookAntiqua;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 5%;
-}
-header{
-	font-size: 80px;
-	font-family: BookAntiqua-Bold;
+
+
+* {
+	background-image: url(wildflowers.jpg);
+	font-family: 'Poiret One', Arial;
+    } #background {
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+    opacity:.5;}
+
+#title{
+	color: #606060;
+	text-shadow: .03em .03em #000;
+	outline:#ff6a00 thick;
+	font-weight: bold;
+    font-size: 35px;
+} 
+
+.toolbar{
+	list-style-type: none;
+	margin:0px;
+ 	padding:0px;
+ 	display:inline-block;
+ 	padding: 0px;
+ }.toolbarclass{
+	padding:0px;
+}.toolbarclass li {
+	border: 1px solid;
+	-webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    padding: 5px;
+    color: black;
+    box-shadow: 5px 5px 1px #888888;
+}.toolbar {
+	-webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
 }
 
-#headerBar {
-    height: 10px;
-    background: black	
-}
-section {
-	font-size: 50px;
-}
-.block {
-	width: 100%; /*400px*/
-    height: 200px;
-    text-align: center;
-    padding-top: 75px;
-    box-sizing: border-box;
-}
-.block-1 {
-	background: #FF8C00;
+body {
+	font-size: 25px;
+	border: 5px;
+}#container{
+	white-space: nowrap;
+	position: absolute;
+	margin:0px;
+	padding:0px;
+}.minigame li{
+	background: #ffb573;
+}.resume li{
+	background: #ffa240;
+}.running li{
+	background: #ff7800;
+}.projects li{
+	background: #bf7130;
+}.about li{
+	background: #a65500;
+}.toolbarclass #active {
+	    opacity: .5;}
 
-}
-.block-2 {
-	background: #19A3FF;
-}
 
-.block-3 {
-	background: #47D147;
-
-}
-.block-4 {
-	background: #F5F50F
-}
-
-a:link, a:visited {
+a:link{
 	color: black;
 	text-decoration: none;
+}a:visited{
+	color: black;
+}#title, a:hover{
+	color:#ff7800;//#00a08a;
 }
 
-#body a:hover {
-	color: white;
-}
-#title, #footer a:hover {
-	color: black; 
-	background-color: #B870FF;
+footer{
+	color: #606060;
+	text-shadow: .02em .02em #000;
+	outline:#ff6a00 thick;
+    font-size: 20px;
+	position: absolute;
+}footer, a:hover{
+	color:#00a08a;
 }
 
-#footerBar {
-    height: 0px;
-    background: black
-}
