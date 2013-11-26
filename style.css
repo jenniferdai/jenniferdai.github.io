@@ -89,3 +89,12 @@ a:link{
 	box-shadow: 0px 0px 0px #fff;
 }
 
+#playshow{
+	width: 500px;
+	height: 300px;
+	border: 1px solid;
+	padding: 10px;
+	-webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+}
+
