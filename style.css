@@ -72,22 +72,20 @@ a:link{
 	background: #bf7130;
 }a.about li{
 	background: #a65500;
-}a.toolbar #active {
-	opacity: .5;
 }a.minigame:hover li{
 	background-color:#1e776d;
-	font-size: 150%;
+	box-shadow: 0px 0px 0px #fff;
 }a.resume:hover li{
-	font-size: 150%;
 	background-color:#00675c;
+	box-shadow: 0px 0px 0px #fff;
 }a.running:hover li{
-	font-size: 150%;
 	background-color:#009e8e;
+	box-shadow: 0px 0px 0px #fff;
 }a.projects:hover li{
-	font-size: 150%;
 	background-color:#34cfbe;
+	box-shadow: 0px 0px 0px #fff;
 }a.about:hover li{
-	font-size: 150%;
 	background-color:#5dcfc3;
+	box-shadow: 0px 0px 0px #fff;
 }
 
