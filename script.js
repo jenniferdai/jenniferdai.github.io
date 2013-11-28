@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	$("#playshow").hide(); //play button
 	$("#runshow").hide(); //run button
-	$("#aboutshow").hide();
+	$(".aboutshow").hide();
 //play button click event
 	$(".minigame").click(function() {
 		$("#resumeshow").hide();
