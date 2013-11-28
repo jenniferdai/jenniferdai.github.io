@@ -97,7 +97,25 @@ a:link{
 	-webkit-border-radius: 0.4em;
     -moz-border-radius: 0.4em;
 }
-#runshow{
-	
+.aboutshow #heading{
+	font-size: 25px;
+	background-image: url(snow.jpg);
+}.aboutshow{
+	margin:20px;
+	padding:0px;
+	position: relative;
+	border: 5px;
+}.aboutshow li{
+	border: 1px solid;
+	-webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    padding: 5px;
+    color: black;
+    box-shadow: 5px 5px 1px #888888;
+    display:inline-block;
+	word-wrap: break-word;
+	width: 250px;
+	background-image: url(snow.jpg);
+}.aboutshow1,.aboutshow2,.aboutshow3{
+	float:left;	
 }
-

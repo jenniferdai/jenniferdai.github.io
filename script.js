@@ -8,7 +8,7 @@ $(document).ready(function() {
 		$("#resumeshow").hide();
 		$("#runshow").hide();
 		$("#projshow").hide();
-		$("#aboutshow").hide();
+		$(".aboutshow").hide();
 		$("#playshow").fadeIn(2000);
 	})
 //resume button click event
@@ -16,7 +16,7 @@ $(document).ready(function() {
 		$("#playshow").hide();
 		$("#runshow").hide();
 		$("#projshow").hide();
-		$("#aboutshow").hide();
+		$(".aboutshow").hide();
 		$("#resumeshow").fadeIn(2000);
 	})
 //run button click event
@@ -24,7 +24,7 @@ $(document).ready(function() {
 		$("#playshow").hide();
 		$("#resumeshow").hide();
 		$("#projshow").hide();
-		$("#aboutshow").hide();
+		$(".aboutshow").hide();
 		$("#runshow").fadeIn(2000);
 	})
 //proj button click event
@@ -32,7 +32,7 @@ $(document).ready(function() {
 		$("#playshow").hide();
 		$("#resumeshow").hide();
 		$("#runshow").hide();
-		$("#aboutshow").hide();
+		$(".aboutshow").hide();
 		$("#projshow").fadeIn(2000);
 	})
 //about button click event
@@ -41,7 +41,7 @@ $(document).ready(function() {
 		$("#resumeshow").hide();
 		$("#projshow").hide();
 		$("#runshow").hide();
-		$("#aboutshow").fadeIn(2000);
+		$(".aboutshow").fadeIn(2000);
 	})
 
 
