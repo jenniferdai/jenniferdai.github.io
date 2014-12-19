@@ -1,6 +1,13 @@
 * {
     font-family: 'Poiret One', Arial;
 }
+a:link{
+        color: white;
+            text-decoration: none;
+        }a:visited{
+                color: orange;
+}
+
 #cover-photo {
     width: 100%;
     min-width: 1000px;
