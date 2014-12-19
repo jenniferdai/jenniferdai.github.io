@@ -1,3 +1,7 @@
+Cover Photo
+Also put watermark on cover photo!
+Also get rid of that white rim around the picture in the browser...
+
 Categories
 1. Writing - though I can link Medium
 Put a blurb about how I put introspective life advice there/personal day-to-day experiences. Since I am good with people/emotions/stuff like that.
@@ -17,14 +21,15 @@ Like a true/false quiz that teaches you about nutrition when you take it? Or jeo
 8. How I help women in CS - that is, after next semester.
 
 Home page
-1. Giant picture with divs on the right hand side(easier for right-hand people to click)
-Or alternatively, just a couple of links at the top. Or I could just make people scroll to each different section. 
-FINAL EDIT FOR HOME PAGE: I will keep the toolbar at the top by putting my code for the toolbar in all the sections.
+I will keep the toolbar at the top by putting my code for the toolbar in all the sections.
 
 Home - just returns to home page
-about - pops up a fancybox?
+about - pops up a fancybox
 resume - also pops up a fancybox
 projects - then it goes to a different page but keeps the toolbar
 Running - also goes to different page but keeps the toolbar
+Pictures on this page will pop up in a fancybox
+TODO FOR BUTTONS: make the buttons collapse when hovered over.
 
-I need to think of a specific color scheme. Maybe I'll use tealish things since that seems to be the fad nowadays. Also, I need to search for a more interesting font.
+Contact Info
+Want these links to open in new tabs
