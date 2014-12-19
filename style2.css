@@ -2,12 +2,8 @@
     font-family: 'Poiret One', Arial;
 }
 a:link{
-        color: white;
-            text-decoration: none;
-        }a:visited{
-                color: orange;
-}a:hover{
-    font-style:italic;
+    color: white;
+    text-decoration: none;
 }
 
 #cover-photo {
@@ -22,17 +18,39 @@ a:link{
     position: absolute; 
     z-index:100;
     top: 10px; 
-    left: 0; 
+    left: 10px; 
     width: 100%; 
     font-size: 20px;
 }
-.toolbar {
-    position: absolute;
-    z-index: 100;
+
+.toolbar{
     top: 30px;
-    left: 0;
-    width: 100%;
+    white-space: nowrap;
+    z-index: 100;
+    margin:20px;
+    padding:0px;
+    position: absolute;
+    font-size: 25px;
+    border: 5px;
+}.toolbar li{
+    border: 1px solid;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    padding: 5px;
+    color: black;
+    box-shadow: 5px 5px 1px #888888;
+    display:inline-block;
 }
+.toolbar A:link{
+    color:black;
+}
+.toolbar A:visited{
+    color:orange;
+}
+a.toolbar:hover li{
+    box-shadow: 0px 0px 0px #fff;
+}
+
 .contact {
     position: absolute;
     z-index:100;
@@ -40,3 +58,11 @@ a:link{
     left: 0;
     width: 100%;
 }
+.contact A:visited {
+    color:pink;
+}
+.contact A:hover {
+    font-style:italic;
+}
+
+

@@ -1,5 +1,14 @@
-
 $(document).ready(function() {
+        $("#about").fancybox({
+            helpers: {
+                title : {
+                    type : 'float'
+                }
+            }
+        }
+        });
+/*
+ * $(document).ready(function() {
 	$("#playshow").hide(); //play button
 	$("#runshow").hide(); //run button
 	$(".aboutshow").hide();
@@ -46,3 +55,4 @@ $(document).ready(function() {
 
 
 })
+*/
