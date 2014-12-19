@@ -1,4 +1,33 @@
+* {
+    font-family: 'Poiret One', Arial;
+}
 #cover-photo {
     width: 100%;
     min-width: 1000px;
+}
+.cover-image { 
+       position: relative; 
+          width: 100%; /* for IE 6 */
+      }
+.title { 
+    position: absolute; 
+    z-index:100;
+    top: 10px; 
+    left: 0; 
+    width: 100%; 
+    font-size: 20px;
+}
+.toolbar {
+    position: absolute;
+    z-index: 100;
+    top: 30px;
+    left: 0;
+    width: 100%;
+}
+.contact {
+    position: absolute;
+    z-index:100;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
 }
