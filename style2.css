@@ -19,8 +19,9 @@ a:link{
 .title { 
     position: absolute; 
     z-index:100;
-    top: 10px; 
-    left: 10px; 
+    top: 5px; 
+    padding: 10px;
+    /*left: 10px; */
     width: 100%; 
     font-size: 20px;
 }
@@ -60,8 +61,8 @@ a:link{
     position: absolute;
     z-index:100;
     bottom: 50px;
-    left: 0;
     width: 100%;
+    padding: 10px;
 }
 .contact A:link {
     color:pink;
