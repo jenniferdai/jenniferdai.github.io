@@ -1,43 +1,78 @@
+ <!-- This is heavily commented to help others learn and to remind myself whatsup -->
+ <!-- defines document type as a html type, specifically HTML5-->
  <!DOCTYPE html>
-<html>
-	<head>
-		<title>Home - Jennifer Dai</title>
-		<meta charset="utf-8" />
-       <link rel="stylesheet" type="text/css" href="style2.css">
-    <script type="text/javascript" src="jquery-1.5.min.js"></script>
-    <script type="text/javascript" src="jquery-ui-1.8.9.custom.min.js"></script>
-    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-		<script src="script.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".fancybox").fancybox();
-        });
-    </script>
-	</head>
+ <!-- html tag describes the HTML document while lang attrubute is important for accessibility applications & search engines -->
+<html lang="en-US">
+<!-- head tag describes information about the document -->
+<head>
+    <!-- provides title for document - like what you see on the tab -->
+	<title>Home - Jennifer Dai</title>
+    <!-- machine parsable data for search engines and things -->
+    <meta charset="UTF-8">
+    <!-- defines author of page -->
+    <meta name="author" content="Jennifer Dai">
+    <!-- defines keywords that search engines will pull up your page with -->
+    <meta name="keywords" content="fitness, 'computer science', 'women in cs', 'jennifer dai'">
+    <!-- Description of page -->
+    <meta name="description" content="Jennifer Dai's Personal Portfolio">
+    <!-- every html elem has a box around it, and border displays it
+    padding = space inside border 
+    margin = space outside border-->
+    <!-- ids use #, used for single elems; classes use . (h1.name)-->
+    <style>
+        h2 {
+            font-family:verdana; 
+            color:red;
+            font-size:300%;
+            border:2px solid black;
+            padding:10px;
+            margin:10px;
+        }
+        h1#name {
+        	color:blue;
+        } 
+        a:link, a:hover, a:visited, a:active {
+            text-decoration: none;
+        }
+    </style> 
+</head>
+<!-- body is visible portion of doc -->
     <body>
-        <div class="cover-image">
-        <img src ="coverphoto.jpg" id="cover-photo">
-        <a class="title">Jennifer Dai: In progress, 12/19/14 </a>
-        <!-- <a class ="title" href="#"> Jennifer Dai: In progress, 12/19/14 </a> -->
-        <ul class="contact">
-            <a href=https://medium.com/@JRextheTRex target="_blank">Medium</a>
-            <a href=http://www.linkedin.com/pub/jennifer-dai/87/713/149 target="_blank">LinkedIn</a>
-            <a href=http://www.github.com/jenniferdai target="_blank">Github</a>
-            <a href=mailto:jennifah.hai.dai@gmail.com target="_blank">Email</a>
-            <a href=http://www.facebook.com/jennifer.dai.7 target="_blank">Facebook</a>
-        </ul>
-			<ul class="toolbar">
-                <li><a class="home" href="#">Home</a></li>
-                <li><a href="#<!--about-->">About</a></li>
-                <li><a href="#<!--resume-->">Resume</a></li>
-                <li><a href="#<!--projects-->">Projects</a></li>
-                <li><a href="#<--running-->">Running</a></li>
-			</ul>
-        </div>
-        <div class="about">
-            <!-- hello -->
-        </div>
+    <!--Search engines use your headings to index the structure and content of your web pages.
+
+    Users skim your pages by its headings. It is important to use headings to show the document structure.
+
+    h1 headings should be main headings, followed by h2 headings, then the less important h3. Till h6.-->
+
+        <!-- br is for line break, and since it is an empty tag, can be closed with a space and a slash -->
+        <!-- title attribute will show when you hover over the thing -->
+        <!-- style with css property:value -->
+        <h1 title="about", id="name">
+            Jennifer Dai <br /> 
+            <a href="#contact">Contact me</a>
+        </h1> 
+        <h2 title="description" style="text-align:center"><del>Student.</del> Fitness. Computer Science.</h2><hr />
+            <!-- pre will leave your text preformatted -->
+            <p><pre>I can        put as many spaces    as I want</pre></p>
+            <!-- alt puts some text there if pic can't be loaded 
+            float will float to left of paragraph-->
+            <img src ="solopic.jpg" alt="Contact Jennifer ASAP halp" style="width:300px;height:200px;float:left">
+
+            <!-- links defined through "a," address specified in href attribute 
+            Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
+
+            Note: a:active MUST come after a:hover in the CSS definition in order to be effective.
+
+            _blank specifies that it be opened in a new tab-->
+            <a id="contact">
+            <!-- <ul id="contact"> -->
+                <a href=https://medium.com/@JRextheTRex target="_blank">Medium</a>
+                <a href=http://www.linkedin.com/pub/jennifer-dai/87/713/149 target="_blank">LinkedIn</a>
+                <a href=http://www.github.com/jenniferdai target="_blank">Github</a>
+                <a href=mailto:jennifah.hai.dai@gmail.com target="_blank">Email</a>
+                <a href=http://www.facebook.com/jennifer.dai.7 target="_blank">Facebook</a>
+<!--             </ul>
+ -->            </a>
     </body>
 
     	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>

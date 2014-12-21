@@ -36,31 +36,30 @@ a:link{
     font-size: 25px;
     border: 5px;
 }.toolbar li{
-    border: 1px solid;
+    /*border: 1px solid;*/
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
-    padding: 5px;
+    padding: 64px;
     color: black;
-    box-shadow: 5px 5px 1px #888888;
+    /*box-shadow: 5px 5px 1px #888888;*/
     display:inline-block;
+    text-align:center;
 }
 .toolbar A:link{
-    color:darkorange;
+    color:black;
 }
 .toolbar A:visited{
-    color:darkorange;
+    color:black;
 }
-/*.toolbar:hover li{
-    box-shadow: 0px 0px 0px #fff;
-}*/
-/*a.home:hover {
-    box-shadow:0px 0px 0px #fff;
-}*/
+.about {
+
+}
+
 
 .contact {
     position: absolute;
     z-index:100;
-    bottom: 50px;
+    bottom: 25px;
     width: 100%;
     padding: 10px;
 }
