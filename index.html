@@ -15,24 +15,41 @@
     <meta name="keywords" content="fitness, 'computer science', 'women in cs', 'jennifer dai'">
     <!-- Description of page -->
     <meta name="description" content="Jennifer Dai's Personal Portfolio">
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <!-- every html elem has a box around it, and border displays it
     padding = space inside border 
     margin = space outside border-->
     <!-- ids use #, used for single elems; classes use . (h1.name)-->
     <style>
-        h2 {
+        .header {
+            text-align: center;
             font-family:verdana; 
-            color:red;
-            font-size:300%;
-            border:2px solid black;
-            padding:10px;
-            margin:10px;
-        }
-        h1#name {
-        	color:blue;
-        } 
+            text-align:center;
+        }        
         a:link, a:hover, a:visited, a:active {
             text-decoration: none;
+        }
+        ul#categories li{
+            display: inline-block;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px 4px 0 0;
+            text-decoration: none;
+        }
+        ul#categories a{
+            background-color: black;
+            border-radius: 30px 20px;
+            text-decoration: none;
+        }
+        ul#contact {
+            padding: 0;
+        }
+        ul#contact li{
+            display: inline-block;
+            padding:10px;
+        }
+        ul#contact a{
         }
     </style> 
 </head>
@@ -47,16 +64,22 @@
         <!-- br is for line break, and since it is an empty tag, can be closed with a space and a slash -->
         <!-- title attribute will show when you hover over the thing -->
         <!-- style with css property:value -->
-        <h1 title="about", id="name">
-            Jennifer Dai <br /> 
-            <a href="#contact">Contact me</a>
-        </h1> 
-        <h2 title="description" style="text-align:center"><del>Student.</del> Fitness. Computer Science.</h2><hr />
-            <!-- pre will leave your text preformatted -->
-            <p><pre>I can        put as many spaces    as I want</pre></p>
+        <div class="header">
+            <h1 title="about">
+                Jennifer Dai
+    <!--             <a href="#contact">Contact me</a>
+     -->        </h1> 
+        </div>
+        <div class="header">
+            <h2 title="description">Preventative Health & Computer Science</h2><hr/>
+        </div>
+        <ul id="categories">
+            <li>About</li>
+            <li>Projects</li>
+        </ul><hr/>
             <!-- alt puts some text there if pic can't be loaded 
             float will float to left of paragraph-->
-            <img src ="solopic.jpg" alt="Contact Jennifer ASAP halp" style="width:300px;height:200px;float:left">
+            <img src ="solopic.jpg" alt="Contact Jennifer ASAP halp" style="width:300px;height:200px;float:right">
 
             <!-- links defined through "a," address specified in href attribute 
             Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
@@ -64,18 +87,13 @@
             Note: a:active MUST come after a:hover in the CSS definition in order to be effective.
 
             _blank specifies that it be opened in a new tab-->
-            <a id="contact">
-            <!-- <ul id="contact"> -->
-                <a href=https://medium.com/@JRextheTRex target="_blank">Medium</a>
-                <a href=http://www.linkedin.com/pub/jennifer-dai/87/713/149 target="_blank">LinkedIn</a>
-                <a href=http://www.github.com/jenniferdai target="_blank">Github</a>
-                <a href=mailto:jennifah.hai.dai@gmail.com target="_blank">Email</a>
-                <a href=http://www.facebook.com/jennifer.dai.7 target="_blank">Facebook</a>
-<!--             </ul>
- -->            </a>
+            <ul id="contact">
+                <li><a href=https://medium.com/@JRextheTRex target="_blank">Medium</a></li>
+                <li><a href=http://www.linkedin.com/pub/jennifer-dai/87/713/149 target="_blank">LinkedIn</a></li>
+                <li><a href=http://www.github.com/jenniferdai target="_blank">Github</a></li>
+                <li><a href=mailto:jennifah.hai.dai@gmail.com target="_blank">Email</a></li>
+                <li><a href=http://www.facebook.com/jennifer.dai.7 target="_blank">Facebook</a></li>
+            </ul>
     </body>
-
-    	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-
 </html>
 
