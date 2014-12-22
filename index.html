@@ -22,6 +22,7 @@
     <script type="text/javascript" src="jquery-1.5.min.js"></script>
     <script type="text/javascript" src="jquery-ui-1.8.9.custom.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="/js/index.js"></script>
     <!-- every html elem has a box around it, and border displays it
     padding = space inside border
     margin = space outside border-->
@@ -48,20 +49,25 @@
         }
         u1#categories a{
             display: block;
-            width: 60px;
+            width: 30px;
         }
         ul#categories li{
+            list-style-type: none;
             text-align: justify;
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
+            background-color: transparent;
+            color: grey;
+            padding: 0px 20px;
             border-radius: 10px 10px 0 0;
-            margin: 10px;
+            margin: 20px;
             text-decoration: none;
-            float:right; 
+            float:left; 
+            font-size: 150%;
         }
         .about, .projects {
             visibility: hidden;
+            clear: both;
+            float: right;
+            z-index: 0;
         }
         ul#contact {
             text-align: center;
@@ -73,11 +79,17 @@
         }
         ul#contact a{
         }
-        form {
-            margin: 20px;
-        }
         #picture {
             clear: both;
+        }
+        #box{
+            position: absolute;
+            clear:both;
+            border:0;
+            bottom:200px;
+            width:50%;
+            height:45%;
+            right:10px;
         }
     </style> 
 </head>
@@ -96,53 +108,56 @@
         <!-- style with css property:value -->
         <div class="header">
             <h1 title="name">
-                Jennifer Dai
+                <b>Jennifer Dai</b>
     <!--             <a href="#contact">Contact me</a>
      -->        </h1> 
         </div>
         <div class="header">
-            <h2 title="description">Preventative Health & Computer Science</h2><hr/>
+            <h2 title="description"><b>Preventative Medicine & Computer Science</b></h2><hr/>
         </div>
         <ul id="categories">
-            <li>About</li>
-            <li>Projects</li>
+            <!--<li><button onclick='showElements("about")'>About</li>-->
+            <!--<li><a href="projects">Projects</a></li>-->
+            <li><a href="#box">About</li>
+            <li><div id="projects">Projects</li>
         </ul>
+        <script type="text/javascript">
+            //document.getElementById("aboutme").innerHTML = "HELLOOOOOO";
+            function showElements(string) {
+                document.getElementsByClassName(string).innerHTML = "about";
+                target.InnerHTML = "<p style="text-align:center"> It is <b> Done </b><p>";
+            }
+        </script>
+        <object id="box" type="text/html" data="about/index.html">hello </object>
+        <!--<iframe id="box" src="about">letssee</iframe>-->
+        <!--<div id="box" class="panel">-->
+           <!--</div>-->
         <div id="picture">
-            <img src ="solopic.jpg" alt="Supposed to be a picture of me; sorry it didn't work." style="width:300px;height:200px;"><hr/>
+            <img src ="solopic.jpg" alt="Supposed to be a picture of me; sorry it didn't work." style="width:300px;height:200px;">
         </div>
             <!-- links defined through "a," address specified in href attribute 
             Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
-
             Note: a:active MUST come after a:hover in the CSS definition in order to be effective.
-
             _blank specifies that it be opened in a new tab-->
             
         <div class="about">
             &forall; &exist;
+            hello how do i get this to appear on the top
         </div>
         <div class ="projects">
-        </div>
-            <form>
-                Leave me feedback!</br>
-                First name:<br>
-                <input type="text" name="firstname">
-                <br>
-                Last name:<br>
-                <input type="text" name="lastname">
-                <br>
-                Email:<br>
-                <input type="text" name="email">
-                <br>
-                Feedback:<br>
-                <input type="text" name="feedback">
-                <br>
-            </form>
+        </div><hr/>
             <ul id="contact">
+                <li><a href=http://runkeeper.com/user/942964344/profile target="_blank">RunKeeper</a></li>
                 <li><a href=https://medium.com/@JRextheTRex target="_blank">Medium</a></li>
                 <li><a href=http://www.linkedin.com/pub/jennifer-dai/87/713/149 target="_blank">LinkedIn</a></li>
                 <li><a href=http://www.github.com/jenniferdai target="_blank">Github</a></li>
                 <li><a href=mailto:jennifah.hai.dai@gmail.com target="_blank">Email</a></li>
                 <li><a href=http://www.facebook.com/jennifer.dai.7 target="_blank">Facebook</a></li>
+                <!--
+                <li><a href=http://sketchbuddy.com/profile/jenniferdai target="_blank">SketchBuddy</a></li>
+                <li><a href=http://instagram.com/jennifahdai/ target="_blank">Instagram</a></li>
+                <li><a href=http://www.yelp.com/user_details?userid=_0TPODmq4h1ePRSO_KYwCw target="_blank">Yelp</a></li>
+                -->
             </ul>
     </body>
 </html>
