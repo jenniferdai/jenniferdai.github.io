@@ -16,33 +16,38 @@
     <!-- Description of page -->
     <meta name="description" content="Jennifer Dai's Personal Portfolio">
     <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Automatic resizing for your webpage on tablets & such -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <!-- every html elem has a box around it, and border displays it
-    padding = space inside border 
+    padding = space inside border
     margin = space outside border-->
     <!-- ids use #, used for single elems; classes use . (h1.name)-->
+    <!-- alt puts some text there if pic can't be loaded 
+            float will float to left of paragraph-->
     <style>
+        * {
+            font-family:'Poiret One', Verdana;
+        }
         .header {
-            text-align: center;
-            font-family:verdana; 
             text-align:center;
-        }        
+        }
         a:link, a:hover, a:visited, a:active {
             text-decoration: none;
         }
+        u1#categories a{
+        }
         ul#categories li{
-            display: inline-block;
             background-color: black;
             color: white;
             padding: 10px 20px;
-            border-radius: 4px 4px 0 0;
+            border-radius: 10px 10px 0 0;
+            margin: 10px;
             text-decoration: none;
-        }
-        ul#categories a{
-            background-color: black;
-            border-radius: 30px 20px;
-            text-decoration: none;
+            float:right; 
         }
         ul#contact {
+            text-align: center;
             padding: 0;
         }
         ul#contact li{
@@ -55,6 +60,8 @@
 </head>
 <!-- body is visible portion of doc -->
     <body>
+        <!-- for those users whose browsers don't support javascript -->
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
     <!--Search engines use your headings to index the structure and content of your web pages.
 
     Users skim your pages by its headings. It is important to use headings to show the document structure.
@@ -65,7 +72,7 @@
         <!-- title attribute will show when you hover over the thing -->
         <!-- style with css property:value -->
         <div class="header">
-            <h1 title="about">
+            <h1 title="name">
                 Jennifer Dai
     <!--             <a href="#contact">Contact me</a>
      -->        </h1> 
@@ -74,13 +81,25 @@
             <h2 title="description">Preventative Health & Computer Science</h2><hr/>
         </div>
         <ul id="categories">
-            <li>About</li>
-            <li>Projects</li>
-        </ul><hr/>
-            <!-- alt puts some text there if pic can't be loaded 
-            float will float to left of paragraph-->
-            <img src ="solopic.jpg" alt="Contact Jennifer ASAP halp" style="width:300px;height:200px;float:right">
-
+            <li><button type="button" onclick="frame('about')">About</button></li>
+            <li><button type="button" onclick="frame('projects')">Projects</button></li>
+        </ul>
+        <script>
+            function frame(string) {
+                var div;
+                if (string == about) {
+                    div = about;
+                }
+                if (string == projects) {
+                    div = projects;
+                }
+                document.getElementById('iframe_a').src = div;
+            }
+        </script>
+            <iframe src = "solopic.jpg"  name="iframe_a" frameborder="0"></iframe>
+                <a href="" target="iframe_a">About</a>
+            <!-- <img src ="solopic.jpg" alt="Supposed to be a picture of me; sorry it didn't work." style="width:300px;height:200px;"><hr/>
+            -->
             <!-- links defined through "a," address specified in href attribute 
             Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
 
