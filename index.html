@@ -16,6 +16,7 @@
     <!-- Description of page -->
     <meta name="description" content="Jennifer Dai's Personal Portfolio">
     <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Automatic resizing for your webpage on tablets & such -->
     <script type="text/javascript" src="jquery-1.5.min.js"></script>
@@ -26,10 +27,18 @@
     margin = space outside border-->
     <!-- ids use #, used for single elems; classes use . (h1.name)-->
     <!-- alt puts some text there if pic can't be loaded 
-            float will float to left of paragraph-->
+            float will float to left of paragraph
+    text-align: justify gives every line equal width
+    visibility: hidden still takes up space but invis
+    display: none doesn't take up space 
+    relative(to its orig pos) vs. absolute(from top & bottom of page) 
+    z-index -1 if you want overlapping behind 
+    clear:both stops the elements around the floating elems from flowing around it
+    display: block and width: 60px is the way to make all the links same size -->
     <style>
         * {
             font-family:'Poiret One', Verdana;
+            font-size: 100%;
         }
         .header {
             text-align:center;
@@ -38,8 +47,11 @@
             text-decoration: none;
         }
         u1#categories a{
+            display: block;
+            width: 60px;
         }
         ul#categories li{
+            text-align: justify;
             background-color: black;
             color: white;
             padding: 10px 20px;
@@ -47,6 +59,9 @@
             margin: 10px;
             text-decoration: none;
             float:right; 
+        }
+        .about, .projects {
+            visibility: hidden;
         }
         ul#contact {
             text-align: center;
@@ -60,6 +75,9 @@
         }
         form {
             margin: 20px;
+        }
+        #picture {
+            clear: both;
         }
     </style> 
 </head>
@@ -89,22 +107,9 @@
             <li>About</li>
             <li>Projects</li>
         </ul>
-        <script type="text/javascript">
-            function frame(string) {
-                var div;
-                if (string == about) {
-                    div = about;
-                }
-                if (string == projects) {
-                    div = projects;
-                }
-                document.getElementById('iframe_a').src = div;
-                console.log(document.getElementbyId('iframe_a')
-            }
-        </script>
-            <iframe name="iframe_a" frameborder="0"></iframe>
-            <!-- <img src ="solopic.jpg" alt="Supposed to be a picture of me; sorry it didn't work." style="width:300px;height:200px;"><hr/>
-            -->
+        <div id="picture">
+            <img src ="solopic.jpg" alt="Supposed to be a picture of me; sorry it didn't work." style="width:300px;height:200px;"><hr/>
+        </div>
             <!-- links defined through "a," address specified in href attribute 
             Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
 
