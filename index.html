@@ -1,3 +1,4 @@
+<!-- TODO: Update Project section. -->
  <!-- This is heavily commented to help others learn and to remind myself whatsup -->
  <!-- defines document type as a html type, specifically HTML5-->
  <!DOCTYPE html>
@@ -21,7 +22,6 @@
     <script type="text/javascript" src="jquery-1.5.min.js"></script>
     <script type="text/javascript" src="jquery-ui-1.8.9.custom.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <script type="text/javascript" src="/js/index.js"></script>
     <!-- every html elem has a box around it, and border displays it
     padding = space inside border
     margin = space outside border-->
@@ -70,21 +70,26 @@
             display: inline-block;
             padding:10px;
         }
-        ul#contact a{
-        }
         #picture {
             clear: both;
+            margin-left: 35px;
         }
-        #project-data, #about-data{
-            position: absolute;
-            clear:both;
-            border:0;
-            bottom:100px;
-            width:50%;
-            height:45%;
-            right:10px;
+        #about-data, #project-data{
+            position: relative;
+            bottom: 200px;
+            width: 50%;
+            left: 400px;
         }
     </style> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57928550-1', 'auto');
+  ga('send', 'pageview');
+  </script>
 </head>
 <!-- body is visible portion of doc -->
     <body>
@@ -92,7 +97,6 @@
         <noscript>Sorry, your browser does not support JavaScript!</noscript>
         <script> 
             $(document).ready(function() {
-                $("#about-data").hide();
                 $("#project-data").hide();
             $("#projects").click(function() {
                 $("#about-data").hide();
@@ -127,24 +131,24 @@
             <li><div id="projects">Projects</div></li>
         </ul>
         <div id="picture">
-            <img src ="solopic.jpg" alt="Supposed to be a picture of me; sorry it didn't work." style="width:300px;height:200px;">
+            <img src="solopic.jpg" alt="Supposed to be a picture of me; sorry it didn't work." style="width:300px;height:200px;">
         </div>
             <!-- links defined through "a," address specified in href attribute 
             Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
             Note: a:active MUST come after a:hover in the CSS definition in order to be effective.
             _blank specifies that it be opened in a new tab-->
             <div id="about-data"> 
-                Hi! My name is Jennifer Dai, I am a senior at UC Berkeley studying computer science. I'm passionate about developing to solve problems in preventative medicine and empowering women in STEM. In my free time, I enjoy outdoor <a href=http://runkeeper.com/user/942964344/profile target="_blank">activities</a>, writing on <a href=https://medium.com/@JRextheTRex target="_blank">Medium</a>, and self-improvement. I'm constantly trying to learn new things; currently, I'm learning how to <a href=http://sketchbuddy.com/profile/jenniferdai target="_blank">draw</a>.
+                Hi! My name is Jennifer Dai, I am a senior at UC Berkeley studying computer science. I'm passionate about developing to solve problems in preventative medicine and empowering women in STEM. In my free time, I enjoy outdoor <a href=http://runkeeper.com/user/942964344/profile target="_blank">activities</a>, learning about hardware, and self-improvement. I'm constantly trying to learn new things.
+                <br /><br />Here is my <a href='JDaiResume.pdf' target="_blank">resume</a>. Ask me for a link to my personal blog! 
             </div>
         <div id="project-data">
-            Updating later.
+            <img src="ioetposter.png" target="_blank" alt="Supposed to load my project poster!" style="width:600px;height:450px">
         </div><hr/>
             <ul id="contact">
                 <li><a href=http://www.linkedin.com/pub/jennifer-dai/87/713/149 target="_blank">LinkedIn</a></li>
                 <li><a href=http://www.github.com/jenniferdai target="_blank">Github</a></li>
-                <li><a href=mailto:jennifah.hai.dai@gmail.com target="_blank">Email</a></li>
+                <li><a href=mailto:jenniferdai529@gmail.com target="_blank">Email</a></li>
                 <li><a href=http://www.facebook.com/jennifer.dai.7 target="_blank">Facebook</a></li>
             </ul>
     </body>
 </html>
-
